@@ -1,6 +1,6 @@
 # tsubasaogawa.me
 
-## About me
+## About
 
 準備中
 
@@ -10,5 +10,6 @@
 
 ## 連絡先
 
-- [X](https://x.com/aeon_ogawa)
-- Email (準備中)
+### Email
+
+![Email](./assets/qr_email.png)
