@@ -1,6 +1,6 @@
 - Table of Content
 {:toc}
-# Whiteout Engineering
+# 個人事業: Whiteout Engineering
 
 - 事業内容: IT システム開発・運用・保守、コンサルティング
 - 理念/メッセージ: [PHILOSOPHY](./PHILOSOPHY.html)
@@ -34,6 +34,7 @@
 - 採用活動
 	- 書類選考・面接
 	- 採用イベントへの参加
+
 #### 主要な技術
 
 - AWS (EC2, ECS, Lambda, ALB, WAF, Aurora, DynamoDB, CloudFormation, SSM, SNS, SQS, SES, etc.)
@@ -60,10 +61,18 @@
 - Site Reliability の向上
 - 写真撮影 (アマチュアカメラマン歴 10 年+)
 
+## 不得意分野
+
+- スマホアプリ開発
+- フロントエンド開発
+- SNS (ソーシャルネットワーク) 関係
+
 ## 興味
 
 - **AI で運用しやすいクラウドインフラの構築**: 最小の人員でシステムのインフラを効率よく運用できる仕組みを模索
+- **最高品質の IaC 探求**: AI にも人間にもフレンドリーな IaC は 5 年後、10 年後の資産となる
 - **北海道への IT 支援**: 自身の強みで大好きな地を支えていく。そして技術を未来につなぐ
+
 ## More information
 
 - 北海道大学 大学院情報科学研究科 修士課程修了 (情報工学)
