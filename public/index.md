@@ -7,51 +7,10 @@
 - [お仕事のご相談](https://forms.gle/nB8PQUMGmictsqG4A)
 
 # About me
+
 ## 職務経歴
-### (2025/01-) 某 Web 系企業
 
-- Web サービスのクラウドインフラ構築・運用
-
-### (2018/07 - 2024/12) オープンワーク株式会社 (旧: 株式会社ヴォーカーズ)
-
-#### 職務概要
-
-- 100 万ユーザー規模の Web サービスにおけるクラウドインフラ構築・運用
-	- 稼働基盤を仮想環境からサーバレスコンテナ環境へ移行
-	- インフラの IaC (Terraform) 化
-	- アプリケーションの CI/CD 整備
-	- Web サイトのドメイン移行
-	- LLM (Amazon Bedrock) を用いた新サービスの PoC
-	- 開発者体験の向上 (開発環境改善など)
-	- その他保守・運用
-		- データベースのアップグレード・パフォーマンスチューニング
-		- AWS サービスや各種ソフトウェアの EOL 対応
-		- 障害対応
-- 企業テックブログの立ち上げ・運営
-- チーム運営
-	- スクラムマスター: スクラムをチームに導入し、継続的な浸透活動
-	- グループマネージャー: PDCA マネジメント、メンバーの目標設定・評価
-- 採用活動
-	- 書類選考・面接
-	- 採用イベントへの参加
-
-#### 主要な技術
-
-- AWS (EC2, ECS, Lambda, ALB, WAF, Aurora, DynamoDB, CloudFormation, SSM, SNS, SQS, SES, etc.)
-- Google Cloud (Cloud Run, Cloud Functions, BigQuery, etc.)
-- Linux (Amazon Linux/Ubuntu), PHP, Python, Go, Shell Script, MySQL, Docker, Terraform, GitHub Actions, CircleCI, Apache Airflow, Serverless Framework, ...
-
-### (2015/04 - 2018/06) ニフティ株式会社
-
-#### 職務概要
-
-* 1000 万ユーザー規模の顧客情報を抱える大規模システムの開発/運用  
-* 2000 年代から稼働していたレガシーシステムを仮想環境から自社クラウドへ移行
-* 新卒学生のリクルーター活動
-
-### 主要な技術
-
-- Linux (CentOS), Oracle, MySQL, PostgreSQL, Java, Perl, Ruby, Chef, Jenkins, munin, Zabbix, ...
+https://github.com/tsubasaogawa/resume
 
 ## 得意分野
 
