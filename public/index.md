@@ -10,7 +10,7 @@
 
 ## 職務経歴
 
-https://github.com/tsubasaogawa/resume
+[tsubasaogawa/resume](https://github.com/tsubasaogawa/resume)
 
 ## 得意分野
 
