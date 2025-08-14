@@ -8,7 +8,6 @@
 
 ## About me
 ### 職務経歴
-
 #### (2025/01-) 某 Web 系企業
 
 - Web サービスのクラウドインフラ構築・運用
@@ -34,7 +33,6 @@
 - 採用活動
 	- 書類選考・面接
 	- 採用イベントへの参加
-
 ##### 主要な技術
 
 - AWS (EC2, ECS, Lambda, ALB, WAF, Aurora, DynamoDB, CloudFormation, SSM, SNS, SQS, SES, etc.)
@@ -72,3 +70,6 @@
 - GitHub: [@tsubasaogawa](https://github.com/tsubasaogawa)
 - Qiita: [@tsubasaogawa](https://qiita.com/tsubasaogawa)
 - 前職のテックブログ記事: [t_ogawa](https://techblog.openwork.co.jp/archive/author/t_ogawa)
+- Email
+	- ![Email](./assets/qr_email.png)
+
