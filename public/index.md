@@ -1,9 +1,9 @@
 - Table of Content
 {:toc}
-# 個人事業: Whiteout Engineering
+# Whiteout Engineering
 
 - 事業内容: IT システム開発・運用・保守、コンサルティング
-- 理念/メッセージ: [PHILOSOPHY](./PHILOSOPHY.html)
+- [理念/メッセージ](./PHILOSOPHY.html)
 - 札幌商工会議所 会員
 - [お仕事のご相談](https://forms.gle/nB8PQUMGmictsqG4A)
 
