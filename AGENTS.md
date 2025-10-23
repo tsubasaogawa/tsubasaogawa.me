@@ -1,1 +1,0 @@
-ai-writing-rules/AGENTS.md
