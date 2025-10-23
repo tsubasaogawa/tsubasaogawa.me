@@ -1,0 +1,3 @@
+[submodule "ai-writing-rules"]
+	path = ai-writing-rules
+	url = git@github.com:tsubasaogawa/ai-writing-rules.git
