@@ -5,7 +5,7 @@ title: Contents
 
 # articles
 
-{% assign doclist = site.pages | sort: 'url' %}
+{% assign doclist = site.pages | sort: 'url' | reverse %}
   {% for doc in doclist %}
     {% if doc.url contains 'articles/' %}
 
