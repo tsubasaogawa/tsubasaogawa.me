@@ -5,11 +5,10 @@ title: Contents
 
 # articles
 
-{% assign doclist = site.pages | sort: 'url', 'last'  %}
+{% assign doclist = site.pages | sort: 'url' %}
   {% for doc in doclist %}
-    {% if doc.url contains 'articles/' and doc.url contains '.md' %}
+    {% if doc.url contains 'articles/' %}
 
 -     [{{ doc.name }}]({{ site.baseurl }}{{ doc.url }})
-
     {% endif %}
   {% endfor %}
