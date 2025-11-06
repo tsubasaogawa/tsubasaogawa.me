@@ -12,3 +12,5 @@ title: Contents
 -     [{{ doc.name }}]({{ site.baseurl }}{{ doc.url }})
     {% endif %}
   {% endfor %}
+
+[Back to home](../)
