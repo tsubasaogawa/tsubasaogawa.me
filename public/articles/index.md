@@ -1,8 +1,3 @@
----
-layout: none
-title: Contents
----
-
 # articles
 
 {% assign doclist = site.pages | sort: 'url' | reverse %}
