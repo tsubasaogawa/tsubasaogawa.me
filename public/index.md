@@ -5,6 +5,7 @@
 - 事業内容: IT システム開発・運用・保守、コンサルティング
 - [理念/メッセージ](./PHILOSOPHY.html)
 - 札幌商工会議所 会員
+- 適格請求書発行事業者
 - [お仕事のご相談](https://forms.gle/nB8PQUMGmictsqG4A)
 
 ## About me
