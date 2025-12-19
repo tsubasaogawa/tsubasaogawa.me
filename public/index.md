@@ -42,5 +42,5 @@
 - GitHub: [@tsubasaogawa](https://github.com/tsubasaogawa)
 - Qiita: [@tsubasaogawa](https://qiita.com/tsubasaogawa)
 - 前職のテックブログ記事: [t_ogawa](https://techblog.openwork.co.jp/archive/author/t_ogawa)
-- [雑記](/articles/)
+- [雑記]({% link articles.md %})
 - [Email](/assets/qr_email.png)
