@@ -6,6 +6,6 @@ title: articles
 
 <ul>
   {% for post in site.posts %}
-    <li>{{ post.year }}-{{ post.month }}-{{ post.day }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li>{{ post.date | date: "%Y-%m-%d" }} <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
