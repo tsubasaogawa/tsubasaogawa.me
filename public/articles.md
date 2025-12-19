@@ -2,13 +2,10 @@
 permalink: /articles
 title: articles
 ---
-# articles
+## articles
 
 <ul>
   {% for post in site.posts %}
-    <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+    <li>{{ post.year }}-{{ post.month }}-{{ post.day }} <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-
