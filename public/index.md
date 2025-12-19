@@ -3,7 +3,7 @@
 ## Whiteout Engineering
 
 - 事業内容: IT システム開発・運用・保守、コンサルティング
-- [理念/メッセージ]({% link PHILOSOPHY.html %})
+- [理念/メッセージ]({% link PHILOSOPHY.md %})
 - 札幌商工会議所 会員
 - 適格請求書発行事業者
 - [お仕事のご相談](https://forms.gle/nB8PQUMGmictsqG4A)
@@ -42,5 +42,5 @@
 - GitHub: [@tsubasaogawa](https://github.com/tsubasaogawa)
 - Qiita: [@tsubasaogawa](https://qiita.com/tsubasaogawa)
 - 前職のテックブログ記事: [t_ogawa](https://techblog.openwork.co.jp/archive/author/t_ogawa)
-- [雑記]({% link /articles/ %})
+- [雑記]({% link /articles/index.md %})
 - [Email]({% link /assets/qr_email.png %})
