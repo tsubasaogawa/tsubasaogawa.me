@@ -1,0 +1,12 @@
+title: tsubasaogawa.me
+description: Whiteout Engineering | Tsubasa Ogawa
+
+plugins:
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
