@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h2><a href="{% link articles.md %}">articles</a>/{{ page.date | date: "%Y-%m-%d" }}/{{ page.title }}</h2>
+<h2><a href="{% link articles.md %}">articles</a> &gt; {{ page.date | date: "%Y-%m-%d" }} {{ page.title }}</h2>
 
 {{ content }}
 
