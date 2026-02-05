@@ -1,8 +1,14 @@
 title: tsubasaogawa.me
-description: Whiteout Engineering | Tsubasa Ogawa
+description: Whiteout Engineering
+
+remote_theme: jekyll/minima
 
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+
+minima:
+  skin: dark
 
 defaults:
   - scope:
