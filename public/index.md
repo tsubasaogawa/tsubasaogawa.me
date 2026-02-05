@@ -1,6 +1,5 @@
 ---
-layout: default
-title: tsubawaogawa.me | Whiteout Engineering
+title: tsubasaogawa.me | Whiteout Engineering
 ---
 
 - Table of Content

@@ -1,3 +1,9 @@
+---
+description: overwrite css settings based on minima theme
+---
+
+@import "minima";
+
 .profile-container {
   display: flex; gap: 20px; align-items: flex-start;
 }
