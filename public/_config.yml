@@ -1,14 +1,11 @@
 title: tsubasaogawa.me
 description: Whiteout Engineering
 
-remote_theme: jekyll/minima
+remote_theme: pages-themes/primer
 
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
-
-minima:
-  skin: dark
 
 defaults:
   - scope:
