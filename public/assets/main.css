@@ -1,0 +1,12 @@
+.profile-container {
+  display: flex; gap: 20px; align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column; /* ècï¿Ç— */
+  }
+  .profile-image-box {
+    margin-top: 10px;
+  }
+} 

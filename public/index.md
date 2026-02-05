@@ -1,10 +1,16 @@
+---
+layout: default
+title: tsubawaogawa.me | Whiteout Engineering
+---
+
 - Table of Content
 {:toc}
+
 ## Whiteout Engineering
 
 上場企業を支えてきた技術力と、個人事業主ならではのきめ細やかなサービスで、北海道の業務効率化や新たなサービス開発といった挑戦を強力に後押し。
 
-<div style="display: flex; gap: 20px; align-items: flex-start;">
+<div class="profile-container">
   <div style="flex: 1;">
     <ul>
       <li>事業内容: IT システム開発・運用およびコンサルティング</li>
@@ -14,7 +20,7 @@
       <li><a href="https://forms.gle/nB8PQUMGmictsqG4A">お仕事のご相談</a></li>
     </ul>
   </div>
-  <div style="width: 200px;">
+<div class="profile-image-box" style="width: 200px;">
     <img src="assets/logo.png" style="width: 100%; height: auto;" alt="Whiteout Engineering Logo">
   </div>
 </div>
