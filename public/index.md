@@ -4,12 +4,20 @@
 
 上場企業を支えてきた技術力と、個人事業主ならではのきめ細やかなサービスで、北海道の業務効率化や新たなサービス開発といった挑戦を強力に後押し。
 
-- 事業内容: IT システム開発・運用およびコンサルティング
-- 札幌商工会議所 会員
-- 適格請求書発行事業者
-- [理念]({% link PHILOSOPHY.md %})
-- [お仕事のご相談](https://forms.gle/nB8PQUMGmictsqG4A)
-
+<div style="display: flex; gap: 20px; align-items: flex-start;">
+  <div style="flex: 1;">
+    <ul>
+      <li>事業内容: IT システム開発・運用およびコンサルティング</li>
+      <li>札幌商工会議所 会員</li>
+      <li>適格請求書発行事業者</li>
+      <li><a href="PHILOSOPHY.md">理念</a></li>
+      <li><a href="https://forms.gle/nB8PQUMGmictsqG4A">お仕事のご相談</a></li>
+    </ul>
+  </div>
+  <div style="width: 200px;">
+    <img src="assets/logo.png" style="width: 100%; height: auto;" alt="Whiteout Engineering Logo">
+  </div>
+</div>
 ## About me
 
  ![SRE / Cloud Architect](https://img.shields.io/badge/Role-SRE_/_Cloud_Architect-orange?style=flat-square)  ![AWS Expert](https://img.shields.io/badge/AWS-Expert-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
