@@ -1,3 +1,7 @@
+---
+title: Philosophy
+---
+
 - Table of Content
 {:toc}
 
