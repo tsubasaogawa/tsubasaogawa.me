@@ -12,7 +12,7 @@ title: tsubasaogawa.me | Whiteout Engineering
 <div class="profile-container">
   <div style="flex: 1;">
     <ul>
-      <li>事業内容: IT システム開発・運用およびコンサルティング</li>
+      <li>事業内容: IT システム開発・運用およびコンサルティング、ランディングページ作成</li>
       <li>札幌商工会議所 会員</li>
       <li>適格請求書発行事業者</li>
       <li><a href="PHILOSOPHY.html">理念</a></li>
@@ -63,5 +63,11 @@ title: tsubasaogawa.me | Whiteout Engineering
 - GitHub: [@tsubasaogawa](https://github.com/tsubasaogawa)
 - Qiita: [@tsubasaogawa](https://qiita.com/tsubasaogawa)
 - 前職のテックブログ記事: [t_ogawa](https://techblog.openwork.co.jp/archive/author/t_ogawa)
+- フリーソフト活動 (過去)
+	- [Vector 作者ページ](https://www.vector.co.jp/vpack/browse/person/an026882.html)
+		- 2002/11 新着ソフトレビュー ([送ろう](https://www.vector.co.jp/magazine/softnews/021116/n0211163.html))
+- 受賞歴
+	- [HSP プログラムコンテスト 2004 秀和システム賞](https://www.onionsoft.net/hsp/contest2004/place.html) (Hyper Speed Player)
+	- [HSP プログラムコンテスト 2005 秀和システム賞](http://www.onionsoft.net/hsp/contest2005/place.html) (Drop'n FTP)
 - [雑記]({% link articles.md %})
 - [Email](/assets/qr_email.png)
