@@ -1,0 +1,184 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hokkaido Wind Power MCP - カーボンアウェアな計算インフラ</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-logo">
+      <div class="logo-mark"><span class="logo-text">⚡</span></div>
+      <span class="logo-name">Hokkaido Wind Power MCP</span>
+    </div>
+    <nav class="header-nav">
+      <a href="#features">機能</a>
+      <a href="#docs">ドキュメント</a>
+    </nav>
+    <div class="spacer"></div>
+    <a href="#cta" class="header-cta">β版アーリーアクセス</a>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="{{ '/images/generated-1772692966691.png' | relative_url }}" alt="Hero Background">
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">GX-ETS 対応 · β版アーリーアクセス受付中</span>
+      </div>
+      <h1 class="hero-headline">あなたの計算処理、<br>今日も石炭で動いてます。</h1>
+      <p class="hero-sub">北海道の再生可能エネルギーと連動した、次世代計算タスクスケジューラ</p>
+      <div class="hero-cta-row">
+        <a href="#poc" class="hero-primary-cta">まずは PoC から</a>
+        <a href="#demo" class="hero-secondary-cta">デモを見る &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section id="problem" class="problem">
+    <div class="problem-header">
+      <span class="problem-label">PROBLEM</span>
+      <h2 class="problem-title">ESG 報告書に、ITインフラの排出量が書けない。<br>それは、経営リスクだ。</h2>
+      <p class="problem-desc">2026 年 4 月、GX 排出量取引制度（GX-ETS）が本格始動。<br>計算処理の CO₂ 排出量を定量的に示せない企業は、ステークホルダーへの説明責任を果たせない。</p>
+    </div>
+    <div class="problem-cards">
+      <div class="card">
+        <span class="card-num">01</span>
+        <h3 class="card-title">重い計算の環境負荷が<br>見えない・制御できない</h3>
+        <p class="card-desc">どれだけ CO₂ を排出しているか分からず、<br>ESG 報告や CN 目標達成の妨げになっている。</p>
+      </div>
+      <div class="card">
+        <span class="card-num">02</span>
+        <h3 class="card-title">重い計算処理のタイミング<br>最適化ができていない</h3>
+        <p class="card-desc">重い処理を電力の汚い時間帯に実行してしまい、<br>無駄に CO₂ を排出している。</p>
+      </div>
+      <div class="card">
+        <span class="card-num">03</span>
+        <h3 class="card-title">グリーン化のための<br>開発コストが高い</h3>
+        <p class="card-desc">カーボンアウェアな基盤を構築する余裕がない。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <div class="feat-header">
+      <span class="feat-label">SOLUTION</span>
+      <h2 class="feat-title">風を読む。計算を待つ。地球を守る。</h2>
+      <p class="feat-sub">3 つのコアモジュールが連携し、計算ワークフローを丸ごとグリーン化する。</p>
+    </div>
+
+    <!-- Feature 1 -->
+    <div class="feat-block">
+      <div class="feat-left">
+        <div class="feat-tag">① Grid Sensor</div>
+        <h3 class="feat-block-title">リアルタイム<br>炭素強度センサー</h3>
+        <p class="feat-block-desc">北海道電力の公開データをリアルタイムに取得。<br>風力発電の出力から炭素強度（gCO₂e/kWh）を動的に推定。<br><br>風が強い時間帯は「グリーン」、火力依存の時間帯は「レッド」として即座に検出。</p>
+      </div>
+      <div class="feat-right">
+        <img src="{{ '/images/generated-1772693221856.png' | relative_url }}" alt="Grid Sensor">
+      </div>
+    </div>
+
+    <!-- Feature 2 -->
+    <div class="feat-block">
+      <div class="feat-right image-left">
+        <img src="{{ '/images/generated-1772693229265.png' | relative_url }}" alt="Temporal Shifting Engine">
+      </div>
+      <div class="feat-left">
+        <div class="feat-tag">② Temporal Shifting Engine</div>
+        <h3 class="feat-block-title">カーボンアウェア<br>スケジューラ</h3>
+        <p class="feat-block-desc">風力ピーク = 格好のバッチタイム。<br><br>重いバッチ処理を北海道の風力発電ピーク時まで自動で賢く遅延。</p>
+      </div>
+    </div>
+
+    <!-- Feature 3 -->
+    <div class="feat-block">
+      <div class="feat-left">
+        <div class="feat-tag">③ Time-Based Emissions Tracker</div>
+        <h3 class="feat-block-title">時間ベース排出量証明書<br>自動発行</h3>
+        <p class="feat-block-desc">ESG 報告書の作成を手助け。<br><br>計算タスク完了後、実行時間ベースの CO₂ 排出量を JSON ファイルで発行。<br>GX-ETS 準拠フォーマットで報告資料にそのまま活用できます。</p>
+      </div>
+      <div class="feat-right">
+        <img src="{{ '/images/generated-1772693386913.png' | relative_url }}" alt="Emissions Tracker">
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <span class="stats-label">IMPACT</span>
+    <h2 class="stats-title">グリーンは、もう言い訳じゃない。戦略だ。</h2>
+    <div class="stats-row">
+      <div class="stat">
+        <span class="stat-num">最大50%</span>
+        <span class="stat-label">重い計算処理の CO₂ 排出を削減</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">1 sec</span>
+        <span class="stat-label">単位で排出量を追跡・証明</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">数行</span>
+        <span class="stat-label">の設定追加で準備完了</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="final-cta">
+    <div class="cta-bg">
+      <img src="{{ '/images/generated-1772693082152.png' | relative_url }}" alt="Hokkaido Wind Power">
+    </div>
+    <div class="cta-content">
+      <span class="cta-label">GET STARTED</span>
+      <h2 class="cta-title">北海道の風を、<br>あなたのインフラに。</h2>
+      <p class="cta-desc">数行の設定で既存システムやバッチ処理に今すぐ導入できます。MCP対応でAIエージェントからの直接利用も可能。<br>PoC 段階のため、先着でサポートチームが個別に導入支援します。</p>
+      <div class="cta-buttons">
+        <a href="#register" class="cta-main">β版アーリーアクセスを申し込む</a>
+      </div>
+      <div class="cta-trust"> &check; PoC段階：個別サポートあり &nbsp; &check; GX-ETS 準拠フォーマット</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo-row">
+          <div class="footer-logo-mark"><span class="footer-logo-icon">⚡</span></div>
+          <span class="footer-logo-name">Hokkaido Wind Power MCP</span>
+        </div>
+        <p class="footer-tagline">北海道の風力で動く、カーボンアウェアな計算インフラ</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <span class="footer-col-title">プロダクト</span>
+          <a href="#features">機能</a>
+          <a href="#docs">ドキュメント</a>
+          <a href="#demo">デモシナリオ</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2026 Whiteout Engineering</span>
+    </div>
+  </footer>
+
+</body>
+</html>
