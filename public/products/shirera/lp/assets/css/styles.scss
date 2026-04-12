@@ -1,5 +1,5 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Jekyll front matter
 ---
 
 // Fonts
@@ -75,7 +75,7 @@ img {
       height: 32px;
       border-radius: 4px;
       overflow: hidden;
-      
+
       img {
         width: 100%;
         height: 100%;
@@ -105,19 +105,19 @@ img {
   padding: 120px 160px 100px 160px;
   background-color: $bg-main;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
+  justify-content: center;
+  gap: 0;
   overflow: hidden;
 
   .hero-bg {
-    position: absolute;
-    top: 120px;
-    left: 160px;
-    right: 160px;
+    flex: 0 0 400px;
     height: 400px;
-    z-index: 1;
     opacity: 0.35;
-    
+    z-index: 1;
+
     img {
       width: 100%;
       height: 100%;
@@ -126,13 +126,13 @@ img {
   }
 
   .hero-content {
+    flex: 1;
     position: relative;
     z-index: 2;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 100%;
-    max-width: 1120px;
+    max-width: 720px;
     text-align: left;
 
     .hero-badge {
@@ -149,13 +149,14 @@ img {
         width: 8px;
         height: 8px;
         background-color: $accent;
+        border-radius: 50%;
       }
 
       .badge-text {
         font-family: $font-label;
         font-weight: 600;
         font-size: 11px;
-        color: $text-main;
+        color: $accent;
         letter-spacing: 1px;
       }
     }
@@ -173,7 +174,7 @@ img {
       font-weight: 400;
       color: #475569;
       line-height: 1.6;
-      max-width: 800px;
+      max-width: 100%;
     }
 
     .hero-cta-row {
@@ -182,7 +183,7 @@ img {
       margin-top: 16px;
 
       .hero-primary-cta {
-        background-color: $primary;
+        background-color: $accent;
         color: white;
         font-weight: 700;
         font-size: 16px;
@@ -345,7 +346,8 @@ img {
       flex-direction: row-reverse;
     }
 
-    .feat-left, .feat-right {
+    .feat-left,
+    .feat-right {
       flex: 1;
     }
 
@@ -527,7 +529,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/generated-1774490080481.png');
+    background-image: url('../../images/generated-1774490080481.png');
     background-size: cover;
     background-position: center;
     opacity: 0.7;
@@ -669,13 +671,16 @@ img {
 
         p {
           margin-bottom: 16px;
-          &:last-child { margin-bottom: 0; }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
         }
 
         ul {
           margin-top: 12px;
           list-style: none;
-          
+
           li {
             position: relative;
             padding-left: 20px;
@@ -735,7 +740,7 @@ img {
           display: flex;
           align-items: center;
           justify-content: center;
-          
+
           .footer-logo-icon {
             font-size: 16px;
             color: #0A0F1C;
@@ -777,24 +782,65 @@ img {
 
 // Responsive adjustments
 @media (max-width: 1280px) {
-  .hero, .problem, .features, .stats, .demo, .final-cta, .qa-section, .footer {
+
+  .hero,
+  .problem,
+  .features,
+  .stats,
+  .demo,
+  .final-cta,
+  .qa-section,
+  .footer {
     padding-left: 80px;
     padding-right: 80px;
   }
 }
 
 @media (max-width: 1024px) {
-  .hero-headline { font-size: 48px; }
-  .problem-title, .feat-title, .demo-title, .qa-title { font-size: 40px; }
-  .problem-cards, .stats-row, .demo-content { grid-template-columns: 1fr; }
-  .feat-block { flex-direction: column; gap: 40px; }
-  .feat-block.reverse { flex-direction: column; }
-  .cta-title { font-size: 48px; }
+  .hero-headline {
+    font-size: 48px;
+  }
+
+  .problem-title,
+  .feat-title,
+  .demo-title,
+  .qa-title {
+    font-size: 40px;
+  }
+
+  .problem-cards,
+  .stats-row,
+  .demo-content {
+    grid-template-columns: 1fr;
+  }
+
+  .feat-block {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .feat-block.reverse {
+    flex-direction: column;
+  }
+
+  .cta-title {
+    font-size: 48px;
+  }
 }
 
 @media (max-width: 768px) {
-  .header { padding: 0 20px; }
-  .hero, .problem, .features, .stats, .demo, .final-cta, .qa-section, .footer {
+  .header {
+    padding: 0 20px;
+  }
+
+  .hero,
+  .problem,
+  .features,
+  .stats,
+  .demo,
+  .final-cta,
+  .qa-section,
+  .footer {
     padding-left: 20px;
     padding-right: 20px;
   }
