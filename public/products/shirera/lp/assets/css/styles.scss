@@ -113,8 +113,8 @@ img {
   overflow: hidden;
 
   .hero-bg {
-    flex: 0 0 400px;
-    height: 400px;
+    flex: 0 0 325px;
+    height: 325px;
     opacity: 0.35;
     z-index: 1;
 
@@ -132,7 +132,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    max-width: 720px;
+    max-width: 834px;
     text-align: left;
 
     .hero-badge {
@@ -725,7 +725,7 @@ img {
       display: flex;
       flex-direction: column;
       gap: 16px;
-      width: 280px;
+      width: 333px;
 
       .footer-logo-row {
         display: flex;
