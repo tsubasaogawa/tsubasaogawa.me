@@ -2,16 +2,23 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-$font-body: 'Inter', sans-serif;
+// Fonts
+$font-heading: 'Plus Jakarta Sans', sans-serif;
+$font-label: 'Space Grotesk', sans-serif;
+$font-display: 'Zen Old Mincho', serif;
 $font-mono: 'JetBrains Mono', monospace;
 
-$bg-dark: #0A0F1C;
-$bg-light: #0F172A;
-$bg-card: #1E293B;
-$primary: #22D3EE;
-$text-main: #FFFFFF;
-$text-muted: #94A3B8;
-$text-darker: #64748B;
+// Colors
+$bg-main: #FAF8F5;
+$bg-white: #FFFFFF;
+$bg-alt: #F8FAFC;
+$bg-dark: #1E293B;
+$primary: #166534; // Deep Green for Stats
+$accent: #C04000; // Earthy Red for labels
+$text-main: #1E293B;
+$text-muted: #64748B;
+$text-light: #F1F5F9;
+$border-color: #E2E8F0;
 
 * {
   box-sizing: border-box;
@@ -19,9 +26,13 @@ $text-darker: #64748B;
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: $font-body;
-  background-color: $bg-dark;
+  font-family: $font-heading;
+  background-color: $bg-main;
   color: $text-main;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -46,8 +57,13 @@ img {
   align-items: center;
   padding: 0 80px;
   height: 72px;
-  background-color: $bg-dark;
+  background-color: transparent;
   gap: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 
   .header-logo {
     display: flex;
@@ -57,57 +73,27 @@ img {
     .logo-mark {
       width: 32px;
       height: 32px;
-      background-color: $primary;
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      .logo-text {
-        font-size: 18px;
-        color: $bg-dark;
+      border-radius: 4px;
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
 
     .logo-name {
-      font-family: $font-mono;
-      font-weight: 600;
-      font-size: 15px;
+      font-family: $font-label;
+      font-weight: 800;
+      font-size: 24px;
+      letter-spacing: 2px;
       color: $text-main;
-    }
-  }
-
-  .header-nav {
-    display: flex;
-    gap: 40px;
-
-    a {
-      font-size: 14px;
-      color: $text-muted;
-      transition: color 0.2s;
-
-      &:hover {
-        color: $primary;
-      }
     }
   }
 
   .spacer {
     flex-grow: 1;
-  }
-
-  .header-cta {
-    background-color: $primary;
-    color: $bg-dark;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 10px 20px;
-    border-radius: 6px;
-    transition: opacity 0.2s;
-
-    &:hover {
-      opacity: 0.9;
-    }
   }
 }
 
@@ -117,26 +103,25 @@ img {
 .hero {
   position: relative;
   padding: 120px 160px 100px 160px;
-  background-color: $bg-dark;
+  background-color: $bg-main;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  align-items: center;
+  overflow: hidden;
 
   .hero-bg {
     position: absolute;
-    top: 48px;
+    top: 120px;
     left: 160px;
     right: 160px;
-    height: 500px;
-    border-radius: 24px;
-    overflow: hidden;
+    height: 400px;
     z-index: 1;
-    opacity: 0.6;
+    opacity: 0.35;
     
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 
@@ -145,56 +130,60 @@ img {
     z-index: 2;
     display: flex;
     flex-direction: column;
-    gap: 28px;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1120px;
+    text-align: left;
 
     .hero-badge {
+      align-self: flex-start;
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background-color: $bg-card;
-      padding: 6px 16px;
-      border-radius: 100px;
+      background-color: $bg-white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      border: 1px solid $bg-dark;
 
       .badge-dot {
         width: 8px;
         height: 8px;
-        background-color: $primary;
-        border-radius: 100px;
+        background-color: $accent;
       }
 
       .badge-text {
-        font-family: $font-mono;
-        font-weight: 500;
-        font-size: 12px;
-        color: $primary;
+        font-family: $font-label;
+        font-weight: 600;
+        font-size: 11px;
+        color: $text-main;
+        letter-spacing: 1px;
       }
     }
 
     .hero-headline {
       font-weight: 700;
-      font-size: 64px;
-      line-height: 1.2;
+      font-size: 66px;
+      line-height: 1.1;
+      letter-spacing: -2px;
+      color: $text-main;
     }
 
     .hero-sub {
-      font-size: 20px;
-      color: $text-muted;
+      font-size: 22px;
+      font-weight: 400;
+      color: #475569;
       line-height: 1.6;
+      max-width: 800px;
     }
 
     .hero-cta-row {
       display: flex;
       gap: 16px;
-      justify-content: center;
       margin-top: 16px;
 
       .hero-primary-cta {
         background-color: $primary;
-        color: $bg-dark;
+        color: white;
         font-weight: 700;
         font-size: 16px;
         padding: 16px 36px;
@@ -207,8 +196,9 @@ img {
       }
 
       .hero-secondary-cta {
-        background-color: $bg-card;
+        background-color: transparent;
         color: $text-main;
+        border: 1px solid $border-color;
         font-weight: 600;
         font-size: 16px;
         padding: 16px 36px;
@@ -216,7 +206,7 @@ img {
         transition: background-color 0.2s;
 
         &:hover {
-          background-color: lighten($bg-card, 5%);
+          background-color: $bg-white;
         }
       }
     }
@@ -228,7 +218,7 @@ img {
 // ----------------------------------------
 .problem {
   padding: 100px 160px;
-  background-color: $bg-light;
+  background-color: $bg-white;
   display: flex;
   flex-direction: column;
   gap: 64px;
@@ -239,23 +229,25 @@ img {
     gap: 16px;
 
     .problem-label {
-      font-family: $font-mono;
+      font-family: $font-label;
       font-size: 11px;
       font-weight: 600;
-      color: $primary;
-      letter-spacing: 2px;
+      color: $accent;
+      letter-spacing: 4px;
     }
 
     .problem-title {
-      font-size: 48px;
+      font-size: 52px;
       font-weight: 700;
       line-height: 1.3;
+      color: $text-main;
     }
 
     .problem-desc {
       font-size: 18px;
       color: $text-muted;
       line-height: 1.7;
+      max-width: 900px;
     }
   }
 
@@ -265,24 +257,31 @@ img {
     gap: 24px;
 
     .card {
-      background-color: $bg-card;
-      padding: 32px;
-      border-radius: 12px;
+      background-color: $bg-alt;
+      padding: 40px;
+      border-radius: 4px; // match lp.pen if specified, or use subtle
+      border: 1px solid $border-color;
       display: flex;
       flex-direction: column;
       gap: 16px;
 
-      .card-num {
-        font-family: $font-mono;
-        font-weight: 700;
+      .card-icon {
         font-size: 32px;
-        color: $primary;
+        margin-bottom: 8px;
+      }
+
+      .card-num {
+        font-family: $font-label;
+        font-weight: 800;
+        font-size: 32px;
+        color: $accent;
       }
 
       .card-title {
         font-weight: 700;
         font-size: 20px;
         line-height: 1.4;
+        color: $text-main;
       }
 
       .card-desc {
@@ -298,29 +297,32 @@ img {
 // Features Section
 // ----------------------------------------
 .features {
-  padding: 100px 160px;
-  background-color: $bg-dark;
+  padding: 120px 80px;
+  background-color: $bg-main;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 120px;
 
   .feat-header {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding-left: 80px;
 
     .feat-label {
-      font-family: $font-mono;
+      font-family: $font-label;
       font-size: 11px;
-      font-weight: 600;
-      color: $primary;
-      letter-spacing: 2px;
+      font-weight: 700;
+      color: $accent;
+      letter-spacing: 4px;
     }
 
     .feat-title {
-      font-size: 48px;
+      font-size: 56px;
       font-weight: 700;
       line-height: 1.3;
+      letter-spacing: -1px;
+      color: $text-main;
     }
 
     .feat-sub {
@@ -333,43 +335,51 @@ img {
   .feat-block {
     display: flex;
     align-items: center;
-    background-color: $bg-light;
-    padding: 60px;
+    background-color: $bg-white;
+    padding: 80px;
     border-radius: 16px;
+    border: 1px solid $border-color;
     gap: 80px;
+
+    &.reverse {
+      flex-direction: row-reverse;
+    }
 
     .feat-left, .feat-right {
       flex: 1;
     }
 
-    .feat-right {
-      img {
-        width: 100%;
-        max-width: 400px;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 12px;
-        margin: 0 auto;
-      }
+    .feat-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .feat-content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
     }
 
     .feat-tag {
       display: inline-flex;
-      background-color: $bg-card;
-      color: $primary;
-      font-family: $font-mono;
-      font-size: 12px;
-      font-weight: 600;
+      background-color: $bg-alt;
+      color: $accent;
+      font-family: $font-label;
+      font-size: 11px;
+      font-weight: 700;
       padding: 6px 14px;
       border-radius: 100px;
-      margin-bottom: 24px;
+      align-self: flex-start;
+      letter-spacing: 1px;
     }
 
     .feat-block-title {
       font-size: 36px;
       font-weight: 700;
       line-height: 1.3;
-      margin-bottom: 24px;
+      color: $text-main;
     }
 
     .feat-block-desc {
@@ -386,15 +396,16 @@ img {
 .stats {
   padding: 100px 160px;
   background-color: $primary;
-  color: $bg-dark;
+  color: white;
   display: flex;
   flex-direction: column;
   gap: 64px;
 
   .stats-label {
-    font-family: $font-mono;
+    font-family: $font-label;
     font-size: 11px;
     font-weight: 600;
+    color: #BAE6FD;
     letter-spacing: 2px;
   }
 
@@ -410,18 +421,24 @@ img {
     gap: 8px;
 
     .stat {
-      background-color: $bg-dark;
+      background-color: #0A0F1C;
       padding: 40px;
       border-radius: 12px;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 12px;
 
       .stat-num {
         font-family: $font-mono;
         font-size: 48px;
         font-weight: 700;
-        color: $primary;
+        color: #22D3EE;
+      }
+
+      .stat-tagline {
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
       }
 
       .stat-label {
@@ -434,65 +451,143 @@ img {
 }
 
 // ----------------------------------------
+// Demo Section
+// ----------------------------------------
+.demo {
+  padding: 100px 160px;
+  background-color: $bg-white;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  .demo-header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .demo-label {
+      font-family: $font-label;
+      font-size: 11px;
+      font-weight: 700;
+      color: $primary;
+      letter-spacing: 4px;
+    }
+
+    .demo-title {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: $text-main;
+    }
+  }
+
+  .demo-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .demo-screenshot-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .demo-screenshot {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 12px;
+      border: 1px solid $border-color;
+    }
+
+    .demo-screenshot-label {
+      font-size: 16px;
+      color: $text-muted;
+      text-align: center;
+    }
+  }
+}
+
+// ----------------------------------------
 // Final CTA Section
 // ----------------------------------------
 .final-cta {
   position: relative;
   padding: 120px 160px;
-  background-color: $bg-dark;
+  background-color: #1E293B;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
 
-  .cta-bg {
+  &::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background-image: url('../images/generated-1774490080481.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
     z-index: 1;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.3;
-    }
   }
 
-  .cta-content {
-    position: relative;
+  .cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 2;
+  }
+
+  .cta-box {
+    position: relative;
+    z-index: 3;
+    background-color: rgba(30, 41, 59, 0.4);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    max-width: 1000px;
+    padding: 100px 60px 60px 60px;
     display: flex;
     flex-direction: column;
     gap: 32px;
+    text-align: left;
 
     .cta-label {
-      font-family: $font-mono;
+      font-family: $font-label;
       font-size: 11px;
-      font-weight: 600;
-      color: $primary;
-      letter-spacing: 2px;
+      font-weight: 800;
+      color: $accent;
+      letter-spacing: 4px;
     }
 
     .cta-title {
-      font-size: 64px;
-      font-weight: 700;
+      font-family: $font-display;
+      font-size: 80px;
+      font-weight: 800;
       line-height: 1.2;
+      color: white;
     }
 
     .cta-desc {
-      font-size: 18px;
-      color: $text-muted;
+      font-size: 22px;
+      font-weight: 600;
+      color: $text-light;
       line-height: 1.7;
-      max-width: 800px;
     }
 
     .cta-buttons {
+      display: flex;
+      gap: 16px;
       margin-top: 16px;
 
       .cta-main {
-        display: inline-block;
         background-color: $primary;
-        color: $bg-dark;
+        color: white;
         font-weight: 700;
         font-size: 16px;
         padding: 20px 48px;
@@ -504,12 +599,103 @@ img {
         }
       }
     }
+  }
+}
 
-    .cta-trust {
-      font-family: $font-mono;
-      font-size: 14px;
-      color: $text-darker;
-      margin-top: 16px;
+// ----------------------------------------
+// QA Section
+// ----------------------------------------
+.qa-section {
+  padding: 100px 160px;
+  background-color: $bg-white;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+  .qa-header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .qa-label {
+      font-family: $font-label;
+      font-size: 11px;
+      font-weight: 600;
+      color: $accent;
+      letter-spacing: 4px;
+    }
+
+    .qa-title {
+      font-size: 48px;
+      font-weight: 700;
+      color: $text-main;
+    }
+  }
+
+  .qa-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .qa-item {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid $border-color;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .question {
+        font-size: 20px;
+        font-weight: 700;
+        color: $text-main;
+        display: flex;
+        gap: 12px;
+
+        &::before {
+          content: "Q.";
+          color: $primary;
+        }
+      }
+
+      .answer {
+        font-size: 16px;
+        color: $text-muted;
+        line-height: 1.7;
+        padding-left: 32px;
+
+        p {
+          margin-bottom: 16px;
+          &:last-child { margin-bottom: 0; }
+        }
+
+        ul {
+          margin-top: 12px;
+          list-style: none;
+          
+          li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+
+            &::before {
+              content: "•";
+              position: absolute;
+              left: 0;
+              color: $primary;
+              font-weight: bold;
+            }
+          }
+        }
+
+        a {
+          color: $primary;
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
@@ -518,8 +704,9 @@ img {
 // Footer
 // ----------------------------------------
 .footer {
-  padding: 64px 160px 48px 160px;
+  padding: 100px 80px;
   background-color: $bg-dark;
+  color: white;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -543,64 +730,37 @@ img {
         .footer-logo-mark {
           width: 28px;
           height: 28px;
-          background-color: $primary;
+          background-color: #22D3EE;
           border-radius: 6px;
           display: flex;
           align-items: center;
           justify-content: center;
-
+          
           .footer-logo-icon {
             font-size: 16px;
-            color: $bg-dark;
+            color: #0A0F1C;
           }
         }
 
         .footer-logo-name {
-          font-family: $font-mono;
-          font-weight: 600;
-          font-size: 14px;
+          font-family: $font-label;
+          font-weight: 800;
+          font-size: 20px;
+          letter-spacing: 1px;
         }
       }
 
       .footer-tagline {
         font-size: 13px;
-        color: $text-darker;
+        color: $text-muted;
         line-height: 1.5;
-      }
-    }
-
-    .footer-links {
-      flex: 1;
-      display: flex;
-      gap: 80px;
-      justify-content: flex-end;
-
-      .footer-col {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-
-        .footer-col-title {
-          font-weight: 600;
-          font-size: 12px;
-        }
-
-        a {
-          font-size: 13px;
-          color: $text-darker;
-          transition: color 0.2s;
-
-          &:hover {
-            color: $primary;
-          }
-        }
       }
     }
   }
 
   .footer-divider {
     height: 1px;
-    background-color: $bg-card;
+    background-color: rgba(255, 255, 255, 0.1);
     width: 100%;
   }
 
@@ -608,70 +768,34 @@ img {
     display: flex;
 
     .footer-copy {
-      font-family: $font-mono;
+      font-family: $font-label;
       font-size: 12px;
-      color: #475569;
+      color: $text-muted;
     }
   }
 }
 
 // Responsive adjustments
-@media (max-width: 1024px) {
-  .hero, .problem, .features, .stats, .final-cta, .footer {
-    padding-left: 40px;
-    padding-right: 40px;
+@media (max-width: 1280px) {
+  .hero, .problem, .features, .stats, .demo, .final-cta, .qa-section, .footer {
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
+@media (max-width: 1024px) {
+  .hero-headline { font-size: 48px; }
+  .problem-title, .feat-title, .demo-title, .qa-title { font-size: 40px; }
+  .problem-cards, .stats-row, .demo-content { grid-template-columns: 1fr; }
+  .feat-block { flex-direction: column; gap: 40px; }
+  .feat-block.reverse { flex-direction: column; }
+  .cta-title { font-size: 48px; }
+}
+
 @media (max-width: 768px) {
-  .header {
-    padding: 0 20px;
-    .header-nav { display: none; }
-  }
-
-  .hero {
-    padding: 80px 20px 60px;
-    .hero-content {
-      .hero-headline { font-size: 40px; }
-      .hero-sub { font-size: 16px; }
-      .hero-cta-row { flex-direction: column; }
-    }
-  }
-
-  .problem {
-    padding: 60px 20px;
-    .problem-cards { grid-template-columns: 1fr; }
-  }
-
-  .features {
-    padding: 60px 20px;
-    .feat-block {
-      flex-direction: column;
-      gap: 40px;
-      .feat-right {
-        order: -1;
-      }
-    }
-  }
-
-  .stats {
-    padding: 60px 20px;
-    .stats-row { grid-template-columns: 1fr; }
-  }
-
-  .final-cta {
-    padding: 80px 20px;
-    .cta-content {
-      .cta-title { font-size: 40px; }
-    }
-  }
-
-  .footer {
-    padding: 60px 20px 40px;
-    .footer-top {
-      flex-direction: column;
-      gap: 40px;
-      .footer-links { justify-content: flex-start; }
-    }
+  .header { padding: 0 20px; }
+  .hero, .problem, .features, .stats, .demo, .final-cta, .qa-section, .footer {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
