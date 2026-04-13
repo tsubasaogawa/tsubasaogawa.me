@@ -808,19 +808,9 @@ img {
     font-size: 40px;
   }
 
-  .problem-cards,
   .stats-row,
   .demo-content {
     grid-template-columns: 1fr;
-  }
-
-  .feat-block {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .feat-block.reverse {
-    flex-direction: column;
   }
 
   .cta-title {
@@ -1052,6 +1042,7 @@ img {
     }
 
     .problem-cards {
+      grid-template-columns: 1fr;
       gap: 16px;
 
       .card {
@@ -1079,8 +1070,13 @@ img {
     }
 
     .feat-block {
+      flex-direction: column;
       padding: 28px;
       gap: 24px;
+
+      &.reverse {
+        flex-direction: column;
+      }
 
       .feat-content {
         gap: 16px;
