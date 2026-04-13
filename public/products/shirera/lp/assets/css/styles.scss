@@ -808,7 +808,6 @@ img {
     font-size: 40px;
   }
 
-  .stats-row,
   .demo-content {
     grid-template-columns: 1fr;
   }
@@ -1102,6 +1101,7 @@ img {
     }
 
     .stats-row {
+      grid-template-columns: 1fr;
       gap: 16px;
 
       .stat {
