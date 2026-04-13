@@ -1,0 +1,271 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shirera - カーボンアウェアな計算インフラ</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Space+Grotesk:wght@600;700;800&family=Zen+Old+Mincho:wght@700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-logo">
+      <div class="logo-mark"><img src="./images/final_logo.png" alt="Shirera Logo"></div>
+      <span class="logo-name">Shirera</span>
+    </div>
+    <div class="spacer"></div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="./images/logo_transparent.png" alt="Hero Background">
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">GX-ETS 対応</span>
+      </div>
+      <h1 class="hero-headline">あなたの計算処理、<br>今日も石炭で動いています。</h1>
+      <p class="hero-sub">北海道の再生可能エネルギーと連動した、次世代計算タスクスケジューラ</p>
+      <div class="hero-cta-row">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdU1WNcX0tQPYgEXvC6SHtKkqRNBVVzVuX7y7vQ9niuWq9pHQ/viewform" class="hero-primary-cta">無料で開始 (お問い合わせください)</a>
+        <a href="#demo" class="hero-secondary-cta">デモを見る &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section id="problem" class="problem">
+    <div class="problem-header">
+      <span class="problem-label">PROBLEM</span>
+      <h2 class="problem-title">ESG 報告書に、ITインフラの排出量が書けない。<br>それは、経営リスクだ。</h2>
+      <p class="problem-desc">2026 年 4 月、GX 排出量取引制度（GX-ETS）が本格始動。<br>計算処理の CO₂ 排出量を定量的に示せない企業は、ステークホルダーへの説明責任を果たせない。</p>
+    </div>
+    <div class="problem-cards">
+      <div class="card">
+        <span class="card-num">01</span>
+        <h3 class="card-title">重い計算の環境負荷が<br>見えない・制御できない</h3>
+        <p class="card-desc">どれだけ CO₂ を排出しているか分からず、<br>ESG 報告や CN 目標達成の妨げになっている。</p>
+      </div>
+      <div class="card">
+        <span class="card-num">02</span>
+        <h3 class="card-title">重い計算処理のタイミング<br>最適化ができていない</h3>
+        <p class="card-desc">重い処理を電力の汚い時間帯に実行してしまい、<br>無駄に CO₂ を排出している。</p>
+      </div>
+      <div class="card">
+        <span class="card-num">03</span>
+        <h3 class="card-title">グリーン化のための<br>開発コストが高い</h3>
+        <p class="card-desc">カーボンアウェアな基盤を構築する余裕がない。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <div class="feat-header">
+      <span class="feat-label">SOLUTION</span>
+      <h2 class="feat-title">計算を待ち、地球を守る。</h2>
+      <p class="feat-sub">3 つのコアモジュールが連携し、計算ワークフローを丸ごとグリーン化する。</p>
+    </div>
+
+    <!-- Feature 1 -->
+    <div class="feat-block">
+      <div class="feat-left">
+        <div class="feat-content">
+          <div class="feat-tag">① Grid Sensor &amp; Temporal Shifting Engine</div>
+          <h3 class="feat-block-title">リアルタイム炭素強度推定<br>＆自動遅延スケジューラ</h3>
+          <p class="feat-block-desc">
+            北海道電力の公開データから炭素強度（gCO₂e/kWh）をリアルタイムに推定*¹。<br>重い処理を再エネ発電のピーク時まで自動で賢く遅延実行します。
+          </p>
+          <p class="feat-footnote">
+            *¹ 炭素強度 = 350 + (300 · R_demand) - (500 · R_solar)  [gCO₂e/kWh]<br>
+            &nbsp;&nbsp;&nbsp;R_demand: 需要飽和度 (3k-5.5k MW), R_solar: 太陽光発電/総需要比<br>
+            &nbsp;&nbsp;&nbsp;(HEPCO Public Data より 5分間隔で動的推定)
+          </p>
+        </div>
+      </div>
+      <div class="feat-right">
+        <img class="feat-image" src="./images/architecture.png" alt="Grid Sensor &amp; Temporal Shifting Engine">
+      </div>
+    </div>
+
+    <!-- Feature 2 -->
+    <div class="feat-block reverse">
+      <div class="feat-left">
+        <div class="feat-content">
+          <div class="feat-tag">② Time-Based Emissions Tracker</div>
+          <h3 class="feat-block-title">時間ベース排出量証明書<br>自動発行</h3>
+          <p class="feat-block-desc">
+            ESG 報告書の作成を手助け。<br><br>計算タスク完了後、実行時間ベースの CO₂ 排出量を JSON ファイルで発行。<br>GX-ETS 準拠フォーマットで報告資料にそのまま活用できます。
+          </p>
+        </div>
+      </div>
+      <div class="feat-right">
+        <img class="feat-image" src="./images/generated-1774490737153.png" alt="Time-Based Emissions Tracker">
+      </div>
+    </div>
+
+    <!-- Feature 3 -->
+    <div class="feat-block">
+      <div class="feat-left">
+        <div class="feat-content">
+          <div class="feat-tag">③ Secure Execution</div>
+          <h3 class="feat-block-title">最小限の外部通信</h3>
+          <p class="feat-block-desc">
+            外部への通信は、北海道電力の公開データ取得のみ。<br><br>その他の不要なネットワークアクセスは一切発生しないため、<br>社内のセキュアな環境でも安全に導入・運用できます。
+          </p>
+        </div>
+      </div>
+      <div class="feat-right">
+        <img class="feat-image" src="./images/secure_data.png" alt="Secure Execution">
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <span class="stats-label">IMPACT</span>
+    <h2 class="stats-title">グリーンは、もう言い訳じゃない。戦略だ。</h2>
+    <div class="stats-row">
+      <div class="stat">
+        <span class="stat-num">最大50%</span>
+        <span class="stat-tagline">CO₂ 排出を削減</span>
+        <span class="stat-label">※ 北海道電力管内の電源構成推移に基づく推定最大値</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">自動記録</span>
+        <span class="stat-tagline">負荷に連動した排出量を記録し、報告書に活用</span>
+        <span class="stat-label">※ 実測電力と系統炭素強度の統合推定</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">即導入</span>
+        <span class="stat-tagline">既存コードはそのまま、簡単な設定で利用開始</span>
+        <span class="stat-label">&nbsp;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo -->
+  <section id="demo" class="demo">
+    <div class="demo-header">
+      <span class="demo-label">LIVE DEMO</span>
+      <h2 class="demo-title">直感的な操作で、サステナブルな開発を。</h2>
+      <p class="demo-caution">画面は開発中のものです</p>
+    </div>
+    <div class="demo-content">
+      <div class="demo-screenshot-container">
+        <img class="demo-screenshot" src="./images/dashboard.png" alt="Dashboard Monitoring">
+        <p class="demo-screenshot-label">リアルタイムで炭素強度や承認待ちタスクが確認できるダッシュボード</p>
+      </div>
+      <div class="demo-screenshot-container">
+        <img class="demo-screenshot" src="./images/terminal.gif" alt="Terminal Demo">
+        <p class="demo-screenshot-label">ターミナルからシステム起動・計算タスクのキューを投入するデモ</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="final-cta">
+    <div class="cta-overlay"></div>
+    <div class="cta-box">
+      <span class="cta-label">GET STARTED</span>
+      <h2 class="cta-title">北海道の再エネを、<br>あなたのインフラに。</h2>
+      <p class="cta-desc">数行の設定で既存システムやバッチ処理に今すぐ導入できます。<br>MCP 対応 (β) で AI エージェントからの直接利用も可能。<br>現在 PoC 段階のため、個別に導入支援します。</p>
+      <div class="cta-buttons">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdU1WNcX0tQPYgEXvC6SHtKkqRNBVVzVuX7y7vQ9niuWq9pHQ/viewform" class="cta-main">無料で開始 (お問い合わせ)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QA Section -->
+  <section id="qa" class="qa-section">
+    <div class="qa-header">
+      <span class="qa-label">FAQ</span>
+      <h2 class="qa-title">よくあるご質問</h2>
+    </div>
+    <div class="qa-list">
+      <div class="qa-item">
+        <div class="question">Shirera はどのようなサービスですか？</div>
+        <div class="answer">
+          <p>「今、北海道の電気はクリーンか？」を判断して、タスクの実行タイミングをコントロールするスケジューラーサービスです。タイミングを制御することで、カーボン排出量の削減に寄与します。</p>
+          <p>また、タスクの実行後には GX 排出量取引制度 (GX-ETS) に活用できる証明書が自動で発行されます。</p>
+        </div>
+      </div>
+      <div class="qa-item">
+        <div class="question">Shirera の導入には何が必要ですか？</div>
+        <div class="answer">
+          <p>システムを動かす既存のマシンにクライアントをインストールします。現時点では GitHub からソースをクローンしてインストールする形となっています。</p>
+        </div>
+      </div>
+      <div class="qa-item">
+        <div class="question">証明書データは GX-ETS の公式な排出量報告の証拠書類として認められますか？</div>
+        <div class="answer">
+          <p>直接的なコンプライアンスの要件を完全に満たすものではないため、直ちには認められません。</p>
+          <p>しかし、「再エネを賢く使った」という実質的かつ高度な排出削減アクションの実行記録にはなります。企業の ESG 評価の向上・社内意識の変革・将来の厳格な環境規制への布石として、企業の総合的な競争力強化に貢献するデータになりえます。</p>
+        </div>
+      </div>
+      <div class="qa-item">
+        <div class="question">電力需給データはどこから取得していますか？</div>
+        <div class="answer">
+          <p><a href="https://denkiyoho.hepco.co.jp/">北海道電力が提供するデータ</a>を利用しています。資源エネルギー庁の指針に基づき、電力系統の透明性を確保するために公開が義務付けられているものです。サーバーに負荷がかからないよう、5 分間隔でデータをキャッシュしながら適切に利用しています。</p>
+        </div>
+      </div>
+      <div class="qa-item">
+        <div class="question">炭素強度の推定ロジックは信頼できますか？</div>
+        <div class="answer">
+          <p>北海道の電力需給構造を反映した合理的な推定モデルを採用しています。現時点ではプロトタイプ向けの近似式としての位置づけです。具体的には以下の 3 点の考え方に基づいています。</p>
+          <ul>
+            <li><strong>1. 合理性</strong>: ベースロード電源の炭素集約度を基準とし、電力需要の増加に伴う火力発電の稼働増や、太陽光発電による抑制効果を数式化しています。これは日本の一般的なグリッド特性と整合する設計です。</li>
+            <li><strong>2. 公開データに基づく推定</strong>: 北海道電力が公開している 5 分間隔の需給実績データから独自に算出しており、学術的な厳密さよりも「今、計算を実行すべきか」を判断するための相対的な指標として最適化されています。</li>
+            <li><strong>3. 将来に向けた、より公的な GX-ETS 対応</strong>: 現時点では推定値ですが、将来的には実測データや公的な電力排出係数との並記をサポートし、より公的な報告書に耐えうる信頼性を確保する計画です。</li>
+          </ul>
+        </div>
+      </div>
+      <div class="qa-item">
+        <div class="question">Shirera が目指しているのは何ですか？</div>
+        <div class="answer">
+          <p>北海道の GX を推進し、道内の活性化につなげることです。</p>
+        </div>
+      </div>
+      <div class="qa-item">
+        <div class="question">Shirera の名前の由来は？</div>
+        <div class="answer">
+          <p>シリ (大地) + レラ (風) を組み合わせた造語です。北海道の再生エネルギーとして風力発電が特に盛んであることから、この名前が付けられました。ただし、上述の通り現時点では太陽光発電のデータをベースにモデル化しています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo-row">
+          <div class="footer-logo-mark"><span class="footer-logo-icon">⚡</span></div>
+          <span class="footer-logo-name">Shirera</span>
+        </div>
+        <p class="footer-tagline">北海道のためのカーボンアウェアな計算インフラ</p>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2026 Whiteout Engineering</span>
+    </div>
+  </footer>
+
+</body>
+
+</html>
