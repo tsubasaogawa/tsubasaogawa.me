@@ -808,19 +808,8 @@ img {
     font-size: 40px;
   }
 
-  .problem-cards,
-  .stats-row,
   .demo-content {
     grid-template-columns: 1fr;
-  }
-
-  .feat-block {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .feat-block.reverse {
-    flex-direction: column;
   }
 
   .cta-title {
@@ -843,5 +832,513 @@ img {
   .footer {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 40px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    padding-top: 144px;
+    padding-bottom: 80px;
+
+    .hero-bg {
+      flex: 0 0 auto;
+      width: 240px;
+      height: 240px;
+    }
+
+    .hero-content {
+      max-width: 100%;
+      gap: 24px;
+
+      .hero-cta-row {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .problem {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 40px;
+  }
+
+  .features {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 80px;
+
+    .feat-header {
+      padding-left: 0;
+    }
+
+    .feat-block {
+      padding: 48px;
+      gap: 32px;
+
+      .feat-content {
+        gap: 20px;
+      }
+
+      .feat-block-title {
+        font-size: 30px;
+      }
+
+      .feat-image {
+        height: 260px;
+      }
+    }
+  }
+
+  .stats {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 40px;
+
+    .stats-title {
+      font-size: 40px;
+    }
+
+    .stats-row {
+      gap: 24px;
+
+      .stat {
+        .stat-num {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
+  .demo {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 40px;
+
+    .demo-content {
+      gap: 24px;
+    }
+  }
+
+  .final-cta {
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    .cta-box {
+      padding: 72px 48px 48px;
+      gap: 24px;
+
+      .cta-buttons {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .qa-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 40px;
+
+    .qa-list {
+      gap: 24px;
+    }
+  }
+
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .footer-top {
+      flex-direction: column;
+      gap: 32px;
+
+      .footer-brand {
+        width: auto;
+        max-width: 333px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 64px;
+    padding: 0 20px;
+
+    .header-logo {
+      .logo-mark {
+        width: 28px;
+        height: 28px;
+      }
+
+      .logo-name {
+        font-size: 20px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  .hero {
+    gap: 24px;
+    padding-top: 104px;
+    padding-bottom: 64px;
+
+    .hero-bg {
+      width: 180px;
+      height: 180px;
+    }
+
+    .hero-content {
+      gap: 20px;
+
+      .hero-headline {
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: -1px;
+      }
+
+      .hero-sub {
+        font-size: 18px;
+      }
+
+      .hero-cta-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        margin-top: 8px;
+
+        .hero-primary-cta,
+        .hero-secondary-cta {
+          width: 100%;
+          padding: 14px 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .problem {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    gap: 32px;
+
+    .problem-header {
+      gap: 12px;
+
+      .problem-title {
+        font-size: 32px;
+      }
+
+      .problem-desc {
+        font-size: 16px;
+      }
+    }
+
+    .problem-cards {
+      grid-template-columns: 1fr;
+      gap: 16px;
+
+      .card {
+        padding: 28px;
+      }
+    }
+  }
+
+  .features {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    gap: 64px;
+
+    .feat-header {
+      gap: 12px;
+      padding-left: 0;
+
+      .feat-title {
+        font-size: 32px;
+      }
+
+      .feat-sub {
+        font-size: 16px;
+      }
+    }
+
+    .feat-block {
+      flex-direction: column;
+      padding: 28px;
+      gap: 24px;
+
+      &.reverse {
+        flex-direction: column;
+      }
+
+      .feat-content {
+        gap: 16px;
+      }
+
+      .feat-block-title {
+        font-size: 28px;
+      }
+
+      .feat-image {
+        height: 220px;
+      }
+    }
+  }
+
+  .stats {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    gap: 32px;
+
+    .stats-title {
+      font-size: 32px;
+    }
+
+    .stats-row {
+      grid-template-columns: 1fr;
+      gap: 16px;
+
+      .stat {
+        padding: 28px;
+
+        .stat-num {
+          font-size: 36px;
+        }
+
+        .stat-tagline {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .demo {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    gap: 32px;
+
+    .demo-header {
+      gap: 12px;
+
+      .demo-title {
+        font-size: 32px;
+      }
+    }
+
+    .demo-content {
+      gap: 20px;
+
+      .demo-screenshot-label {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .final-cta {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    .cta-box {
+      padding: 48px 24px 32px;
+      gap: 20px;
+
+      .cta-title {
+        font-size: 40px;
+      }
+
+      .cta-desc {
+        font-size: 18px;
+      }
+
+      .cta-buttons {
+        margin-top: 8px;
+
+        .cta-main {
+          width: 100%;
+          padding: 16px 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .qa-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    gap: 32px;
+
+    .qa-header {
+      gap: 12px;
+
+      .qa-title {
+        font-size: 32px;
+      }
+    }
+
+    .qa-list {
+      gap: 20px;
+
+      .qa-item {
+        padding-bottom: 20px;
+
+        .question {
+          font-size: 18px;
+        }
+
+        .answer {
+          padding-left: 0;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    gap: 32px;
+
+    .footer-top {
+      gap: 24px;
+
+      .footer-brand {
+        max-width: none;
+
+        .footer-logo-row {
+          .footer-logo-name {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .footer-bottom {
+      justify-content: center;
+
+      .footer-copy {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0 16px;
+  }
+
+  .hero,
+  .problem,
+  .features,
+  .stats,
+  .demo,
+  .final-cta,
+  .qa-section,
+  .footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero {
+    .hero-bg {
+      width: 140px;
+      height: 140px;
+    }
+
+    .hero-content {
+      .hero-headline {
+        font-size: 30px;
+      }
+
+      .hero-sub {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .problem {
+    .problem-header {
+      .problem-title {
+        font-size: 28px;
+      }
+    }
+  }
+
+  .features {
+    .feat-header {
+      .feat-title {
+        font-size: 28px;
+      }
+    }
+
+    .feat-block {
+      padding: 24px 20px;
+
+      .feat-block-title {
+        font-size: 24px;
+      }
+
+      .feat-image {
+        height: 180px;
+      }
+    }
+  }
+
+  .stats {
+    .stats-title {
+      font-size: 28px;
+    }
+
+    .stats-row {
+      .stat {
+        .stat-num {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  .demo {
+    .demo-header {
+      .demo-title {
+        font-size: 28px;
+      }
+    }
+  }
+
+  .final-cta {
+    .cta-box {
+      padding: 40px 20px 28px;
+
+      .cta-title {
+        font-size: 32px;
+      }
+
+      .cta-desc {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .qa-section {
+    .qa-header {
+      .qa-title {
+        font-size: 28px;
+      }
+    }
+
+    .qa-list {
+      .qa-item {
+        .question {
+          font-size: 17px;
+        }
+      }
+    }
   }
 }
