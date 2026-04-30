@@ -28,7 +28,7 @@ title: tsubasaogawa.me | Whiteout Engineering
 
 #### Shirera - カーボンアウェア・スケジューラ
 
-![Shirera](./assets/shirera_banner.png)
+[![Shirera](./assets/shirera_banner.png)](/products/shirera/lp/)
 
 ## About me
 
