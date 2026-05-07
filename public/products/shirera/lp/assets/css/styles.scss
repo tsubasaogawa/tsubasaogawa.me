@@ -184,7 +184,7 @@ img {
 
       .hero-primary-cta {
         background-color: $accent;
-        color: white;
+        color: #0A0F1C;
         font-weight: 700;
         font-size: 16px;
         padding: 16px 36px;
@@ -197,9 +197,8 @@ img {
       }
 
       .hero-secondary-cta {
-        background-color: transparent;
-        color: $text-main;
-        border: 1px solid $border-color;
+        background-color: #1E293B;
+        color: white;
         font-weight: 600;
         font-size: 16px;
         padding: 16px 36px;
@@ -207,7 +206,7 @@ img {
         transition: background-color 0.2s;
 
         &:hover {
-          background-color: $bg-white;
+          background-color: lighten(#1E293B, 10%);
         }
       }
     }
@@ -366,11 +365,11 @@ img {
 
     .feat-tag {
       display: inline-flex;
-      background-color: $bg-alt;
-      color: $accent;
+      background-color: $primary;
+      color: #FFFFFF;
       font-family: $font-label;
-      font-size: 11px;
-      font-weight: 700;
+      font-size: 12px;
+      font-weight: 600;
       padding: 6px 14px;
       border-radius: 100px;
       align-self: flex-start;
@@ -378,7 +377,8 @@ img {
     }
 
     .feat-block-title {
-      font-size: 36px;
+      font-family: $font-display;
+      font-size: 40px;
       font-weight: 700;
       line-height: 1.3;
       color: $text-main;
@@ -388,6 +388,11 @@ img {
       font-size: 16px;
       color: $text-muted;
       line-height: 1.7;
+    }
+
+    .feat-footnote {
+      color: #94A3B8;
+      font-size: 11px;
     }
   }
 }
@@ -434,7 +439,7 @@ img {
         font-family: $font-mono;
         font-size: 48px;
         font-weight: 700;
-        color: #22D3EE;
+        color: #BAE6FD;
       }
 
       .stat-tagline {
@@ -445,7 +450,7 @@ img {
 
       .stat-label {
         font-size: 14px;
-        color: $text-muted;
+        color: #94A3B8;
         line-height: 1.5;
       }
     }
@@ -529,7 +534,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../../images/generated-1774490080481.png');
+    background-image: url('../../images/hokkaido_wind_hero.png');
     background-size: cover;
     background-position: center;
     opacity: 0.7;
@@ -757,7 +762,7 @@ img {
 
       .footer-tagline {
         font-size: 13px;
-        color: $text-muted;
+        color: #94A3B8;
         line-height: 1.5;
       }
     }
