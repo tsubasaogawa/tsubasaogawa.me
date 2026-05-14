@@ -18,7 +18,7 @@ title: tsubasaogawa.me | Whiteout Engineering
       <li>事業内容: IT システム開発・運用およびコンサルティング、ランディングページ作成など</li>
       <li>札幌商工会議所 会員</li>
       <li>適格請求書発行事業者</li>
-      <li><a href="PHILOSOPHY.html">理念</a></li>
+      <li><a href="PHILOSOPHY.html">理念・指針・メッセージ</a></li>
       <li><a href="https://forms.gle/nB8PQUMGmictsqG4A">お仕事のご相談</a></li>
     </ul>
   </div>
